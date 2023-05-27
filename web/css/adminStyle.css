@@ -1,0 +1,106 @@
+/* Buy tikets modal */
+.modal {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.open{
+    display: flex;
+}
+
+.modal-container {
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.3s;
+}
+
+header.modal-header {
+    background-color: #299be4!important;
+    color: #fff;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #fff;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-body {
+    padding: 0 16px;
+    font-size: 15px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.modal-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.form-submit {
+    background-color: #299be4!important;
+    color: #fff;
+    width: 100%;
+    /* margin: 15px auto; */
+    padding: 17px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 15px;
+}
+.buy-tickets:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.modal-footer {
+    text-align: right;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.modal-footer a{
+    color: #2196F3!important;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

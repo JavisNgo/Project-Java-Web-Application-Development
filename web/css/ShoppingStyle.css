@@ -1,0 +1,6 @@
+input {
+    display: none;
+}
+a:focus ~input {
+    display: block;
+}
